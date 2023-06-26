@@ -59,7 +59,7 @@ export default {
     @use '../../styles/partials/mixins' as *;
 
     div#welcome {
-        padding: 7rem 0;
+        padding: 7rem 0 5rem;
 
         div.title {
             width: 50%;
