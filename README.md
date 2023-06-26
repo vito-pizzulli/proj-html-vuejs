@@ -20,7 +20,7 @@ Popolare le voci di menù di Header e Footer dinamicamente, tramite delle props,
 
             AppMain {
                 Welcome {
-                    InfoCard
+                    AdvantageCard
                 }
 
                 Doctors {
@@ -28,7 +28,7 @@ Popolare le voci di menù di Header e Footer dinamicamente, tramite delle props,
                 }
 
                 Services {
-                    InfoCard
+                    ServiceCard
                 }
 
                 Facilities {
