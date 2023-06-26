@@ -1,14 +1,44 @@
 <template>
-    <nav id="navbar">
+    <nav id="header-navbar">
         <!-- Avada Health Logo -->
         <img src="../../assets/img/medical_logo_2x_light.png" alt="Avada Health Logo">
 
         <!-- Links List -->
         <ul>
-            <li v-for="(link, index) in sitePages"><a :href="link.link">{{ link.text }}</a></li>
-            <li><button><a href="#">Make Appointment</a></button></li>
+            <li v-for="(link, index) in sitePages">
+                <a :href="link.link">{{ link.text }}</a><span v-if="(index == 2)"><i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li>
+                <button><a href="#">Make Appointment</a></button>
+            </li>
         </ul>
     </nav>
+    <div id="header-info">
+        <div class="title">
+            <h1>Caring <span>For Life</span></h1>
+            <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="office-hours">
+            <span>Office Hours</span>
+            <hr>
+            <table>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>8:00 - 5:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 - 5:00</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>11:00 - 4:00</td>
+                </tr>
+            </table>
+            <span>+44(0) 1865 339665</span>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -23,23 +53,95 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @use '../../styles/partials/variables' as *;
     @use '../../styles/partials/mixins' as *;
     
-    nav#navbar {
+    nav#header-navbar {
         @include flex(row, space-between, center, no-wrap);
         padding: 3rem 4rem;
+        color: $white;
 
         img {
             width: 300px;
-
         }
 
         ul {
             @include flex(row, space-between, center, no-wrap);
-            list-style-type: none;
 
             li {
-                margin: 0 1rem;
+                margin: 0 1.5rem;
+                text-transform: uppercase;
+
+                &:first-child a {
+                    color: $teal;
+                }
+
+                span {
+                    margin-left: .5rem;
+                }
+
+                button {
+                    background-color: $teal;
+                }
+            }
+        }
+    }
+
+    div#header-info {
+        @include flex(row, center, center, no-wrap);
+        width: 65%;
+        margin: auto;
+        padding: 12rem 0;
+        color: $white;
+        transform: translateY(-11%);
+        
+        div.title {
+            width: 70%;
+
+            h1 {
+                font-size: 5.5rem;
+                font-weight: 500;
+
+                span {
+                    color: $teal;
+                }
+            }
+
+            p {
+                font-size: 1.7rem;
+                margin: 1.5rem 0;
+            }
+
+            button {
+                background-color: $teal;
+                color: $white;
+                margin: 1.5rem 0;
+                font-size: 1.2rem;
+                padding: 1rem 3rem;
+            }
+        }
+
+        div.office-hours {
+            width: 30%;
+            background-color: #3bb0bf80;
+            padding: 1rem;
+            text-align: center;
+
+            span {
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 2rem;
+                font-size: 1.4rem;
+            }
+
+            hr {
+                border: 2px solid $teal;
+                margin: 1rem;
+            }
+
+            table tr td {
+                padding: 1.5rem 1.9rem 1.5rem;
+                text-align: start;
             }
         }
     }
