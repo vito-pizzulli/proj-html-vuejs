@@ -130,13 +130,13 @@ export default {
             span {
                 text-transform: uppercase;
                 display: inline-block;
-                padding: 2rem;
+                padding: 1.5rem;
                 font-size: 1.4rem;
             }
 
             hr {
                 border: 2px solid $teal;
-                margin: 1rem;
+                margin-bottom: 1rem;
             }
 
             table tr td {
