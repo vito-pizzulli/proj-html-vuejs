@@ -1,5 +1,8 @@
 <template>
-    <AppHeader />
+    <AppHeader
+        :sitePages="sitePages"
+        :departments="departments"
+    />
     <AppMain />
     <AppFooter />
 </template>
@@ -15,6 +18,56 @@ export default {
         AppHeader,
         AppMain,
         AppFooter
+    },
+
+    data() {
+        return {
+            sitePages: [
+                {
+                    text: 'Home',
+                    link: '#'
+                },
+                {
+                    text: 'About',
+                    link: '#'
+                },
+                {
+                    text: 'Departments',
+                    link: '#'
+                },
+                {
+                    text: 'Articles',
+                    link: '#'
+                }
+            ],
+
+            departments: [
+                {
+                    text: 'General Practice',
+                    link: '#'
+                },
+                {
+                    text: 'Cardiology',
+                    link: '#'
+                },
+                {
+                    text: 'Pediatrics',
+                    link: '#'
+                },
+                {
+                    text: 'Diabetes Care',
+                    link: '#'
+                },
+                {
+                    text: 'Pre-natal Care',
+                    link: '#'
+                },
+                {
+                    text: 'Ultrasound Echocardiogram',
+                    link: '#'
+                }
+            ]
+        }
     }
 }
 </script>
