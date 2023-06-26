@@ -1,12 +1,20 @@
 <template>
     <div id="doctors">
-        <img src="../../assets/img/icon-5.png" alt="Doctors Icon">
-        <h2>Meet Our Doctors</h2>
-        <hr>
-        <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae</p>
-        <DoctorCard v-for="doctor in doctors"
+
+        <!-- Upper title section -->
+        <div class="title">
+            <img src="../../assets/img/icon-5.png" alt="Doctors Icon">
+            <h2>Meet Our Doctors</h2>
+            <hr>
+            <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae</p>
+        </div>
+        
+        <!-- Bottom doctors list, populated by DoctorCard Components -->
+        <div class="doctors-list">
+            <DoctorCard v-for="doctor in doctors"
             :doctor="doctor"
         />
+        </div>
     </div>
 </template>
 
@@ -56,5 +64,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+    @use '../../styles/partials/variables' as *;
+    @use '../../styles/partials/mixins' as *;
+
+    div#doctors {
+        background-color: $lighter_grey;
+        text-align: center;
+        padding: 7rem 0 5rem;
+
+        div.title {
+            width: 50%;
+            margin: auto;
+
+            img {
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+
+            hr {
+                width: 35%;
+                margin: auto;
+                color: $light_grey;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 50px;
+                width: 75%;
+                margin: auto;
+            }
+        }
+
+        div.doctors-list {
+            @include flex(row, center, center, no-wrap);
+            margin: 4rem auto;
+            width: 70%;
+        }
+    }
 </style>
