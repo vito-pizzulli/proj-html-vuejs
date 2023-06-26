@@ -1,12 +1,18 @@
 <template>
     <div class="info-card">
-        Sono il componente InfoCard
+        <img :src="advantage.icon" alt="Advantage Icon">
+        <h3>{{ advantage.title }}</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim</p>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'InfoCard'
+    name: 'InfoCard',
+
+    props: {
+        advantage: Object
+    }
 }
 </script>
 
