@@ -1,11 +1,15 @@
 <template>
     <div id="welcome">
+
+        <!-- Upper title section -->
         <div class="title">
             <h2>Welcome To Avada Health</h2>
             <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Todam Rem Aperiam, Eaque Ipsa Quae Ab Illo</p>
         </div>
+
+        <!-- Bottom advantages section, populated by AdvantageCard Components -->
         <div class="advantages">
-            <InfoCard v-for="advantage in advantages"
+            <AdvantageCard v-for="advantage in advantages"
                 :advantage="advantage"
             />
         </div>
@@ -13,12 +17,12 @@
 </template>
 
 <script>
-import InfoCard from '../Shared Components/InfoCard.vue'
+import AdvantageCard from './AdvantageCard.vue'
 export default {
     name: 'Welcome',
 
     components: {
-        InfoCard
+        AdvantageCard
     },
 
     data() {
@@ -26,19 +30,23 @@ export default {
             advantages: [
                 {
                     title: 'Same Day Appointments',
-                    icon: './src/assets/img/icon-1.png'
+                    icon: './src/assets/img/icon-1.png',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim'
                 },
                 {
                     title: 'World Class Facilities',
-                    icon: './src/assets/img/icon-2.png'
+                    icon: './src/assets/img/icon-2.png',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim'
                 },
                 {
                     title: 'Expert Doctors',
-                    icon: './src/assets/img/icon-3.png'
+                    icon: './src/assets/img/icon-3.png',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim'
                 },
                 {
                     title: 'Complementary Therapies',
-                    icon: './src/assets/img/icon-4.png'
+                    icon: './src/assets/img/icon-4.png',
+                    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim'
                 },
             ]
         }
@@ -47,5 +55,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+    @use '../../styles/partials/variables' as *;
+    @use '../../styles/partials/mixins' as *;
+
+    div#welcome {
+        padding: 7rem 0;
+
+        div.title {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 1.5rem;
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 50px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        div.advantages {
+            @include flex(row, center, center, no-wrap);
+            width: 70%;
+            margin: auto;
+            padding: 3rem;
+            text-align: center;
+        }
+    }
 </style>
