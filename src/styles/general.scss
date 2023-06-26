@@ -28,3 +28,25 @@ button {
     font-family: 'Montserrat', sans-serif;
     border-radius: 2px;
 }
+
+i.fa-brands {
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 3px;
+    color: white;
+    margin-right: .5rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+i.fa-facebook-f  {
+    background-color: #3b5998;
+}
+
+i.fa-twitter {
+    background-color: #55acee;
+}
+
+i.fa-instagram {
+    background-color: #3f729b;
+}

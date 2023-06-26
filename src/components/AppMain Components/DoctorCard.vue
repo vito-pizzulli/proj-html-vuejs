@@ -57,28 +57,6 @@ export default {
                 margin-bottom: 1.5rem;
                 line-height: 40px;
             }
-
-            i.fa-brands {
-                width: 30px;
-                aspect-ratio: 1;
-                border-radius: 3px;
-                color: white;
-                margin-right: .5rem;
-                line-height: 30px;
-                text-align: center;
-            }
-
-            i.fa-facebook-f  {
-                background-color: $facebook_color;
-            }
-
-            i.fa-twitter {
-                background-color: $twitter_color;
-            }
-
-            i.fa-instagram {
-                background-color: $instagram_color;
-            }
         }
     }
 </style>
