@@ -1,12 +1,17 @@
 <template>
     <main>
-        <h1>Sono il Main</h1>
+        <Welcome />
     </main>
 </template>
 
 <script>
+import Welcome from './AppMain Components/Welcome.vue'
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+
+    components: {
+        Welcome
+    }
 }
 </script>
 
