@@ -29,6 +29,5 @@ export default {
         background-image: url('../assets/img/header-image-homepage.jpg');
         background-size: 120%;
         background-position: top;
-        height: 1000px;
     }
 </style>
