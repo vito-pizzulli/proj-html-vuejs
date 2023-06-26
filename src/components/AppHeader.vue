@@ -78,7 +78,7 @@ export default {
 
                 h1 {
                     font-size: 5.5rem;
-                    font-weight: 500;
+                    font-weight: 400;
 
                     span {
                         color: $teal;
