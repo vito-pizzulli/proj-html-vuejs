@@ -1,4 +1,6 @@
 <template>
+
+    <!-- Client logo image (dynamically populated) -->
     <div class="client-logo">
         <img :src="client.logo" alt="Client Logo">
     </div>

@@ -1,4 +1,6 @@
 <template>
+
+    <!-- Clients logo carousel, populated by ClientLogo Components -->
     <div id="clients-carousel">
         <div class="container">
             <ClientLogo v-for="client in clients"
