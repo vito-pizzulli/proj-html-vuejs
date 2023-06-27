@@ -1,5 +1,5 @@
 <template>
-    <div class="advantage-card">
+    <div class="card">
 
         <!-- Advantage card content (dynamically populated) -->
         <img :src="advantage.icon" alt="Advantage Icon">
@@ -19,19 +19,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-    div.advantage-card {
-
-        h3 {
-            margin: 1rem auto;
-            text-transform: uppercase;
-            font-weight: 500;
-            font-size: 1.4rem;
-            width: 80%;
-        }
-
-        p {
-            line-height: 40px;
-        }
-    }
+    
 </style>
