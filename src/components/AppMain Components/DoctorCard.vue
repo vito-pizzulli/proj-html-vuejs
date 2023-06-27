@@ -45,20 +45,21 @@ export default {
                 text-transform: uppercase;
                 font-weight: 400;
                 margin-bottom: 1rem;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                color: $charcoal;
             }
 
             span {
                 margin-bottom: 1.5rem;
                 display: inline-block;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                color: $charcoal;
             }
 
             p {
                 margin-bottom: 1.5rem;
                 line-height: 40px;
                 color: grey;
-                font-size: 1.1rem;
                 width: 80%;
             }
         }
