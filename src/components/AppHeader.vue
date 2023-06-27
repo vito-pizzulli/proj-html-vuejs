@@ -110,7 +110,7 @@ export default {
             div.office-hours {
                 width: 30%;
                 background-color: #3bb0bf80;
-                padding: 1rem;
+                padding: 1.5rem;
                 text-align: center;
                 margin-left: 2rem;
 
