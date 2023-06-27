@@ -9,7 +9,13 @@
             <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae</p>
             <img src="../../assets/img/play-icon.png" alt="Play Icon">
         </div>
-        <FacilityCard />
+        
+        <!-- Bottom facilities section, populated by FacilityCard Components -->
+        <div class="facilities-list">
+            <FacilityCard v-for="facility in facilities"
+                :facility="facility"
+            />
+        </div>
     </div>
 </template>
 
