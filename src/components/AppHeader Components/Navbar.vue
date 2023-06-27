@@ -114,7 +114,7 @@ export default {
             li button {
                 background-color: $teal;
                 transition: all .2s;
-                margin: 0 1rem;
+                margin-left: 1rem;
                 font-size: .9rem;
 
                 &:hover {

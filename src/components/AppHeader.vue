@@ -71,7 +71,7 @@ export default {
             margin: auto;
             padding: 12rem 0;
             color: $white;
-            transform: translateY(-9%);
+            transform: translate(-1%, -8%);
             
             div.title {
                 width: 70%;
@@ -86,7 +86,7 @@ export default {
                 }
 
                 p {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     margin: 1rem 0;
                     width: 100%;
                 }
