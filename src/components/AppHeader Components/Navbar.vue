@@ -39,7 +39,7 @@ export default {
     
     nav#header-navbar {
         @include flex(row, space-between, center, no-wrap);
-        padding: .5rem 4rem 3rem;
+        padding: 0 4rem 3rem;
         color: $white;
 
         img {
@@ -52,8 +52,8 @@ export default {
 
             li.links {
                 font-family: 'Montserrat', sans-serif;
-                padding: 0 0 3rem;
-                margin: 3rem 1.5rem 0;
+                padding: 0 0 4rem;
+                margin: 4rem 1.5rem 0;
                 text-transform: uppercase;
                 cursor: pointer;
                 font-size: .9rem;
