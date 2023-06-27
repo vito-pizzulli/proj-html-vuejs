@@ -73,8 +73,22 @@ export default {
         text-align: center;
         padding: 7rem 0 5rem;
 
-        div.title h2 {
-            text-transform: uppercase;
+        div.title {
+            margin-bottom: 2.5rem;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+        }
+        
+            
+        div.services-list {
+            @include flex(row, center, center, wrap);
+            width: 70%;
+            margin: auto;
+            padding: 3rem;
+            text-align: center;
         }
     }
 </style>

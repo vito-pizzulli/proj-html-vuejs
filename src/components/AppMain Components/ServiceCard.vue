@@ -19,5 +19,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
+
+    div.card {
+        width: calc(100% / 3);
+        margin-bottom: 5rem;
+
+        p {
+            width: 95%;
+        }
+    }
 </style>
