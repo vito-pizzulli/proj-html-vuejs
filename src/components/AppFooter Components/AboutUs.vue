@@ -22,11 +22,11 @@
         </div>
         <div class="right-section">
             <h3>Medical departments</h3>
+            <hr>
             <ul>
                 <li v-for="department in departments"><a :href="department.link"><i class="fa-solid fa-circle-check"></i> {{ department.text }}</a></li>
             </ul>
-            <hr>
-
+            <button>View Our Departments</button>
         </div>
     </div>
 </template>
@@ -55,17 +55,64 @@ export default {
             width: calc(100% / 3);
             margin: 0 2rem;
 
+            h3 {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            hr {
+                color: $teal;
+                width: 45px;
+                margin-bottom: 1.5rem;
+            }
+
             p,
             span {
                 color: grey;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                line-height: 35px;
+            }
+
+            span {
+                display: block;
+            }
+
+            button {
+                background-color: $teal;
+                color: white;
+                width: 100%;
             }
         }
 
-        div.right-section ul li a {
-            color: grey;
+        div.left-section h3 {
+            margin-bottom: 2rem;
+        }
 
-            i {
-                color: $teal;
+        div.central-section div.google-maps {
+            background-color: $lighter_grey;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        div.right-section ul {
+            margin-bottom: 2rem;
+
+            li {
+                margin: .5rem 0;
+
+                a {
+                    color: grey;
+
+                    i {
+                        color: $teal;
+                        font-size: 2rem;
+                    }
+                }
             }
         }
     }
