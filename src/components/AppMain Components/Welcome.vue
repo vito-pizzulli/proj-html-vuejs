@@ -63,7 +63,7 @@ export default {
 
         div.title {
             h2 {
-                font-size: 2.7rem;
+                font-size: 2.8rem;
             }
         }
 

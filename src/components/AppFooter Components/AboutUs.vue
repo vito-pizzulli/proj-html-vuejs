@@ -82,6 +82,7 @@ export default {
 
             p {
                 line-height: 35px;
+                width: 95%;
             }
 
             span {
