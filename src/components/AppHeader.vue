@@ -13,7 +13,7 @@
             <div class="title">
                 <h1>Caring <span>For Life</span></h1>
                 <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
-                <button>Learn more</button>
+                <button><a href="#">Learn more</a></button>
             </div>
 
             <!-- Right-side section with office hours -->

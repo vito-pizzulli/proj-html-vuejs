@@ -32,7 +32,7 @@
             <ul>
                 <li v-for="department in departments"><a :href="department.link"><i class="fa-solid fa-circle-check"></i> {{ department.text }}</a></li>
             </ul>
-            <button>View Our Departments</button>
+            <button><a href="#">View Our Departments</a></button>
         </div>
     </div>
 </template>
