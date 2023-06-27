@@ -102,7 +102,7 @@ export default {
         div.central-section div.google-maps {
             background-color: $lighter_grey;
             text-align: center;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem 2rem;
         }
 
         div.right-section ul {
