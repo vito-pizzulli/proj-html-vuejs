@@ -16,7 +16,7 @@
                 <button><a href="#">Learn more</a></button>
             </div>
 
-            <!-- Right-side section with office hours -->
+            <!-- Right-side section with office hours table -->
             <div class="office-hours">
                 <span>Office Hours</span>
                 <hr>
@@ -63,7 +63,7 @@ export default {
     header {
         background-image: url('../assets/img/header-image-homepage.jpg');
         background-size: 120%;
-        background-position: top;
+        background-position: 60% 0;
 
         div#header-info {
             @include flex(row, center, center, no-wrap);
@@ -71,7 +71,7 @@ export default {
             margin: auto;
             padding: 12rem 0;
             color: $white;
-            transform: translateY(-8%);
+            transform: translateY(-9%);
             
             div.title {
                 width: 70%;
@@ -86,8 +86,9 @@ export default {
                 }
 
                 p {
-                    font-size: 1.7rem;
-                    margin: 1.5rem 0;
+                    font-size: 1.6rem;
+                    margin: 1rem 0;
+                    width: 100%;
                 }
 
                 button {
@@ -96,6 +97,11 @@ export default {
                     margin: 1.5rem 0;
                     font-size: 1.2rem;
                     padding: 1rem 3rem;
+                    transition: all .2s;
+
+                    &:hover {
+                        background-color: $blue;
+                    }
                 }
             }
 
