@@ -4,7 +4,9 @@
         :departments="departments"
     />
     <AppMain />
-    <AppFooter />
+    <AppFooter
+        :departments="departments"
+    />
 </template>
 
 <script>
