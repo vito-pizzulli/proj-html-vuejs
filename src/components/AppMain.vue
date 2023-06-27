@@ -1,6 +1,5 @@
 <template>
     <main>
-
         <Welcome />
         <Doctors />
         <Services />
@@ -32,5 +31,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
 </style>
