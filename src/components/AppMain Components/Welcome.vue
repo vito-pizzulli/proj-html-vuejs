@@ -59,27 +59,8 @@ export default {
     @use '../../styles/partials/mixins' as *;
 
     div#welcome {
+        text-align: center;
         padding: 7rem 0 5rem;
-
-        div.title {
-            width: 50%;
-            margin: auto;
-            text-align: center;
-            margin-bottom: 1.5rem;
-
-            h2 {
-                font-size: 3rem;
-                font-weight: 500;
-                margin-bottom: 1.5rem;
-            }
-
-            p {
-                font-size: 1.3rem;
-                line-height: 50px;
-                width: 75%;
-                margin: auto;
-            }
-        }
 
         div.advantages {
             @include flex(row, center, center, no-wrap);

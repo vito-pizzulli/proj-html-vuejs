@@ -50,3 +50,32 @@ i.fa-twitter {
 i.fa-instagram {
     background-color: #3f729b;
 }
+
+div.title {
+    width: 50%;
+    margin: auto;
+
+    img {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    hr {
+        width: 35%;
+        margin: auto;
+        color: #dddddd;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        line-height: 50px;
+        width: 75%;
+        margin: auto;
+    }
+}
