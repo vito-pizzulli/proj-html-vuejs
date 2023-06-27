@@ -68,7 +68,7 @@ export default {
     @use '../../styles/partials/mixins' as *;
 
     div#doctors {
-        background-color: #f5f5f5;
+        background-color: $light_grey;
         text-align: center;
         padding: 7rem 0 5rem;
 
