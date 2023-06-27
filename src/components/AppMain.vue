@@ -5,6 +5,7 @@
         <Doctors />
         <Services />
         <Facilities />
+        <AppointmentForm />
     </main>
 </template>
 
@@ -13,6 +14,7 @@ import Welcome from './AppMain Components/Welcome.vue'
 import Doctors from './AppMain Components/Doctors.vue'
 import Services from './AppMain Components/Services.vue'
 import Facilities from './AppMain Components/Facilities.vue'
+import AppointmentForm from './AppMain Components/AppointmentForm.vue'
 export default {
     name: 'AppMain',
 
@@ -20,7 +22,8 @@ export default {
         Welcome,
         Doctors,
         Services,
-        Facilities
+        Facilities,
+        AppointmentForm
     }
 }
 </script>
