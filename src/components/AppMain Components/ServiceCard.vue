@@ -1,12 +1,20 @@
 <template>
     <div class="card">
         
+        <!-- Service card content (dynamically populated) -->
+        <img :src="service.icon" alt="Service Icon">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'ServiceCard'
+    name: 'ServiceCard',
+
+    props: {
+        service: Object
+    }
 }
 </script>
 
