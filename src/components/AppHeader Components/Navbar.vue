@@ -51,6 +51,7 @@ export default {
             @include flex(row, space-between, center, no-wrap);
 
             li.links {
+                font-family: 'Montserrat', sans-serif;
                 padding: 0 0 3rem;
                 margin: 3rem 1.5rem 0;
                 text-transform: uppercase;
