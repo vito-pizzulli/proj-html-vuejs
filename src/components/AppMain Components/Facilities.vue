@@ -58,12 +58,29 @@ export default {
     
     div#facilities {
         text-align: center;
-        padding: 7rem 0 5rem;
+        padding: 9rem 0 0;
         background-image: url('../../assets/img/paralax-bg-tour-facilities.jpg');
+        background-position: 0% 260%;
         color: white;
 
-        div.title p {
-            margin-bottom: 1.5rem;
+        div.title {
+            margin-bottom: 9rem;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+
+            img:nth-of-type(2) {
+                cursor: pointer;
+            }
+        }
+
+        div.facilities-list {
+            @include flex(row, center, center, no-wrap);
         }
     }
 </style>
