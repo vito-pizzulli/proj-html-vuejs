@@ -37,7 +37,7 @@ Popolare le voci di menù di Header e Footer dinamicamente, tramite delle props,
 
                 AppointmentForm
 
-                ClientsCarousel
+                Clients
             }
 
             AppFooter {
