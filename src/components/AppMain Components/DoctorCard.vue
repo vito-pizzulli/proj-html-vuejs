@@ -56,6 +56,7 @@ export default {
             p {
                 margin-bottom: 1.5rem;
                 line-height: 40px;
+                color: grey;
             }
         }
     }
