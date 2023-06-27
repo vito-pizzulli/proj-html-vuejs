@@ -68,10 +68,12 @@ export default {
 
             h2 {
                 text-transform: uppercase;
+                color: $white;
             }
 
             p {
                 margin-bottom: 2rem;
+                color: $white;
             }
 
             img:nth-of-type(2) {

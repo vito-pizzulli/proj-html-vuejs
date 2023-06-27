@@ -66,6 +66,7 @@ export default {
                 font-weight: 400;
                 font-size: 1.2rem;
                 margin-bottom: 1.5rem;
+                color: $charcoal;
             }
 
             hr {
@@ -76,13 +77,13 @@ export default {
 
             p,
             span {
-                color: grey;
                 margin-bottom: 1.5rem;
             }
 
             p {
                 line-height: 35px;
                 width: 95%;
+                color: grey;
             }
 
             span {
@@ -96,14 +97,25 @@ export default {
             }
         }
 
-        div.left-section h3 {
-            margin-bottom: 2rem;
+        div.left-section {
+            h3 {
+                margin-bottom: 2rem;
+            }
+
+            span {
+                color: $charcoal;
+            }
         }
 
-        div.central-section div.google-maps {
-            background-color: $lighter_grey;
-            text-align: center;
-            padding: 3rem 1.5rem 2rem;
+        div.central-section {
+            span {
+                color: grey;
+            }
+            div.google-maps {
+                background-color: $lighter_grey;
+                text-align: center;
+                padding: 3rem 1.5rem 2rem;
+            }
         }
 
         div.right-section ul {

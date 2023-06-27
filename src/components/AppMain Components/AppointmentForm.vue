@@ -45,6 +45,11 @@ export default {
 
             h2 {
                 font-size: 2.7rem;
+                color: $white;
+            }
+
+            p {
+                color: $white;
             }
         }
 

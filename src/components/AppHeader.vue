@@ -90,6 +90,7 @@ export default {
                     margin: 1rem 0;
                     width: 95%;
                     line-height: 35px;
+                    color: $white;
                 }
 
                 button {
