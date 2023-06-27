@@ -61,6 +61,12 @@ export default {
         text-align: center;
         padding: 7rem 0 5rem;
 
+        div.title {
+            h2 {
+                font-size: 2.7rem;
+            }
+        }
+
         div.advantages {
             @include flex(row, center, center, no-wrap);
             width: 70%;
