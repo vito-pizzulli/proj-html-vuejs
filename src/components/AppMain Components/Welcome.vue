@@ -47,7 +47,7 @@ export default {
                     title: 'Complementary Therapies',
                     icon: './src/assets/img/icon-4.png',
                     text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptam accusantim'
-                },
+                }
             ]
         }
     }
