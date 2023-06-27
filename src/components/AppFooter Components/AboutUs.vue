@@ -1,5 +1,7 @@
 <template>
     <div id="about-us">
+
+        <!-- Left section with logo, text & social icons -->
         <div class="left-section">
             <img src="../../assets/img/medical_logo_1x_dark.png" alt="Avada Health Logo Small">
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolemue launti totam aperiam, eaque ipsa quae abillo. Ivente veriatis et quasi architecto beatae luptatem accusantium, remaperiamsiat.Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.</p>
@@ -9,6 +11,8 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
+
+        <!-- Central section with contact information & Google Maps acceptation -->
         <div class="central-section">
             <h3>Contact Information</h3>
             <hr>
@@ -20,6 +24,8 @@
                 <button>I Accept</button>
             </div>
         </div>
+
+        <!-- Right section with medical departments list (populated dynamically) -->
         <div class="right-section">
             <h3>Medical departments</h3>
             <hr>
