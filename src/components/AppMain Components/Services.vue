@@ -79,10 +79,8 @@ export default {
             h2 {
                 text-transform: uppercase;
             }
-
         }
-        
-            
+
         div.services-list {
             @include flex(row, center, center, wrap);
             width: 70%;
