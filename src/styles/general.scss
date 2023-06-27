@@ -1,3 +1,4 @@
+@use './partials/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* Reset */
@@ -17,7 +18,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: $white;
 }
 
 button {
@@ -34,26 +35,26 @@ i.fa-brands {
     width: 30px;
     aspect-ratio: 1;
     border-radius: 3px;
-    color: white;
+    color: $white;
     margin-right: .5rem;
     line-height: 30px;
     text-align: center;
 }
 
 i.fa-facebook-f  {
-    background-color: #3b5998;
+    background-color: $facebook_color;
 }
 
 i.fa-twitter {
-    background-color: #55acee;
+    background-color: $twitter_color;
 }
 
 i.fa-instagram {
-    background-color: #3f729b;
+    background-color: $instagram_color;
 }
 
 i.fa-youtube {
-    background-color: #cd201f;
+    background-color: $youtube_color;
 }
 
 div.title {
@@ -82,6 +83,7 @@ div.title {
         line-height: 50px;
         width: 75%;
         margin: auto;
+        color: $charcoal;
     }
 }
 
