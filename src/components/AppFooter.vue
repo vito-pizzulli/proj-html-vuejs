@@ -1,6 +1,8 @@
 <template>
     <footer>
-        <AboutUs />
+        <AboutUs
+            :departments="departments"
+        />
         <Copyright />
     </footer>
 </template>
@@ -14,6 +16,10 @@ export default {
     components: {
         AboutUs,
         Copyright
+    },
+
+    props: {
+        departments: Array
     }
 }
 </script>
