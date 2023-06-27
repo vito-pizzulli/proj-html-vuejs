@@ -1,12 +1,16 @@
 <template>
     <div class="client-logo">
-        <h1>logo</h1>
+        <img :src="client.logo" alt="Client Logo">
     </div>
 </template>
 
 <script>
 export default {
-    name: 'ClientLogo'
+    name: 'ClientLogo',
+
+    props: {
+        client: Object
+    }
 }
 </script>
 
