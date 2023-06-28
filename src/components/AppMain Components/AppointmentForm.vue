@@ -64,6 +64,15 @@ export default {
                 color: grey;
                 padding: 1rem;
                 border: 1px solid $white;
+
+                &:hover {
+                    border-color: #286978;
+                }
+
+                &:focus {
+                    border: none;
+                    outline: 1px solid $teal;
+                }
             }
 
             input {
@@ -96,6 +105,11 @@ export default {
                 width: calc(100% - 2rem);
                 color: $white;
                 background-color: $teal;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $blue;
+                }
             }
         }
     }
