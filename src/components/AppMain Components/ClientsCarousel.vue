@@ -36,6 +36,12 @@ export default {
                 }
             ]
         }
+    },
+
+    created() {
+        setInterval(() => {
+            this.clients.push(this.clients.shift());
+        }, 4000);
     }
 }
 </script>
