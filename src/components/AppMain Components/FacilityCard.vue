@@ -58,6 +58,19 @@ export default {
             background-color: transparent;
             color: $white;
             border: 2px solid $white;
+            transition: all .2s;
+
+            a {
+                transition: all .2s;
+            }
+
+            &:hover {
+                background-color: $white;
+
+                a {
+                    color: $teal;
+                }
+            }
         }
     }
 </style>
