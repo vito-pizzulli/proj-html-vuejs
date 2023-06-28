@@ -89,6 +89,8 @@ div.title {
 }
 
 div.card {
+    cursor: pointer;
+
     h3 {
         margin: 1rem auto;
         text-transform: uppercase;
@@ -96,11 +98,16 @@ div.card {
         font-size: 1.4rem;
         width: 80%;
         color: $charcoal;
+        transition: all .3s;
     }
 
     p {
         line-height: 40px;
         color: grey;
         font-size: 1.1rem;
+    }
+
+    &:hover h3 {
+        color: $teal;
     }
 }
