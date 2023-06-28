@@ -6,10 +6,10 @@
             <img src="../../assets/img/medical_logo_1x_dark.png" alt="Avada Health Logo Small">
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolemue launti totam aperiam, eaque ipsa quae abillo. Ivente veriatis et quasi architecto beatae luptatem accusantium, remaperiamsiat.Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.</p>
             <h3>Learn more about us</h3>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" data-title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" data-title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" data-title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" data-title="Youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
 
         <!-- Central section with contact information & Google Maps acceptation -->
@@ -94,6 +94,11 @@ export default {
                 background-color: $teal;
                 color: white;
                 width: 100%;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $blue;
+                }
             }
         }
 
@@ -104,6 +109,29 @@ export default {
 
             span {
                 color: $charcoal;
+            }
+
+            a {
+                position: relative;
+
+                &::after {
+                    content: attr(data-title);
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: $charcoal;
+                    color: $lighter_grey;
+                    padding: .3rem .5rem;
+                    border-radius: 5px;
+                    font-size: .8rem;
+                    transition: all .3s;
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
             }
         }
 
