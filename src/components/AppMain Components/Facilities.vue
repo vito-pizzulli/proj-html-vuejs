@@ -60,8 +60,10 @@ export default {
         text-align: center;
         padding: 9rem 0 0;
         background-image: url('../../assets/img/paralax-bg-tour-facilities.jpg');
-        background-position: 0% 260%;
+        background-position: center;
         background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         color: white;
 
         div.title {

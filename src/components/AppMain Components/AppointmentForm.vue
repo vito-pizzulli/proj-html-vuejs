@@ -37,8 +37,10 @@ export default {
         text-align: center;
         padding: 9rem 0 10rem;
         background-image: url('../../assets/img/make-an-appointment.jpg');
-        background-position: 0 50%;
+        background-position: center;
         background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         color: white;
 
         div.title {

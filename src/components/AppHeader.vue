@@ -62,8 +62,10 @@ export default {
     
     header {
         background-image: url('../assets/img/header-image-homepage.jpg');
-        background-size: 120%;
-        background-position: 60% 0;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
 
         div#header-info {
             @include flex(row, center, center, no-wrap);
