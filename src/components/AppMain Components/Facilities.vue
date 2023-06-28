@@ -61,6 +61,7 @@ export default {
         padding: 9rem 0 0;
         background-image: url('../../assets/img/paralax-bg-tour-facilities.jpg');
         background-position: 0% 260%;
+        background-size: cover;
         color: white;
 
         div.title {

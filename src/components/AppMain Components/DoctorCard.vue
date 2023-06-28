@@ -33,6 +33,7 @@ export default {
         width: calc(100% / 3);
         margin: 1.5rem;
         text-align: start;
+        max-width: 350px;
 
         img {
             width: 100%;

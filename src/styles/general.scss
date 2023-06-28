@@ -60,6 +60,7 @@ i.fa-youtube {
 div.title {
     width: 50%;
     margin: auto;
+    max-width: 1344px;
 
     img {
         margin-bottom: 1.5rem;
@@ -90,6 +91,7 @@ div.title {
 
 div.card {
     cursor: pointer;
+    max-width: 650px;
 
     h3 {
         margin: 1rem auto;

@@ -51,6 +51,7 @@ export default {
     
     div#clients-carousel {
         background-image: url(../../assets/img/rgb-gradient-bar-for-logo-carrasel.jpg);
+        background-size: cover;
         padding: 2.5rem 0;
 
         div.container {

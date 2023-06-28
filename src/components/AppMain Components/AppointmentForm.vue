@@ -38,6 +38,7 @@ export default {
         padding: 9rem 0 10rem;
         background-image: url('../../assets/img/make-an-appointment.jpg');
         background-position: 0 50%;
+        background-size: cover;
         color: white;
 
         div.title {

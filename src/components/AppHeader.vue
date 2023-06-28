@@ -72,6 +72,7 @@ export default {
             padding: 12rem 0;
             color: $white;
             transform: translate(-1%, -11%);
+            max-width: 1344px;
             
             div.title {
                 width: 70%;
