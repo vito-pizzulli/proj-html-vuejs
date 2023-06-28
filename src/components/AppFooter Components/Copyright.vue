@@ -21,7 +21,12 @@ export default {
         padding: 2.5rem 7rem;
 
         p a {
-            color: black;
+            color: $charcoal;
+            transition: all .3s;
+
+            &:hover {
+                color: $teal;
+            }
         }
     }
 </style>
