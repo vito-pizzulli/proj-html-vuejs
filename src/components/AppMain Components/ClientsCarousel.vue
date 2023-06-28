@@ -4,8 +4,8 @@
     <div id="clients-carousel">
         <div class="container">
             <ClientLogo v-for="client in clients"
-            :client="client"
-        />
+                :client="client"
+            />
         </div>
     </div>
 </template>
